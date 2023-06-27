@@ -2,8 +2,8 @@
 ### Projects:
 |     |     |
 | --- | --- |
-| [fun-with-js](fun-with-js/) | Introduction to some javascript gotchas | 
-| [fun-with-node](fun-with-node/) | Introduction to NodeJS and npm |
+| [fun-with-js](projects/fun-with-js/) | Introduction to some javascript gotchas | 
+| [fun-with-node](projects/fun-with-node/) | Introduction to NodeJS and npm |
 
 
 ### Javascript types and gotchas
@@ -29,21 +29,12 @@
 ## Typescript basics
 * We learned about the basic types of typescript
   * The 6 atomic types of javascript: `boolean`, `number`, `string`, `object`, `function` and `undefined`
-  * Typed arrays: `number[]` and `Array<number>`
-  * Tuples: `[number, number], [string, boolean, number]`
-  * Fixed object notation: `{x: number, y: boolean}`
-  * Flexible object notation: `{[key: string]: number}` and the equivilent: `Record<string, number>`
-  * Function notation: `(x: number, y: string) => boolean` 
 
 ## Typescript deep dive
 * Using the `let` keyword
 * Defining Classes
 * Declaring constructors and initializing fields in the constructor signature
 * private, public and protected fields
-* Using interfaces
-* Typescript definition for **Type Safety** as "signature compatible"
-* Union Types
-* Cross Types
 * the `type` alias
 
 
