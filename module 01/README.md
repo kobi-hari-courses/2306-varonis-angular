@@ -3,6 +3,8 @@
 |     |     |
 | --- | --- |
 | [fun-with-js](fun-with-js/) | Introduction to some javascript gotchas | 
+| [fun-with-node](fun-with-node/) | Introduction to NodeJS and npm |
+
 
 ### Javascript types and gotchas
 * We have Convered the 6 types of javascript: boolean, number, string, object, function, and undefined
@@ -23,17 +25,6 @@
 * We saw how to use the node.js `require` command in order to incorporate another module (file) into our code
 * We saw how the `package.json` file manages the project as a package.
 * We saw how to install external packages using `npm install` and the `package.json > dependencies` section
-* We talked about the diffrence between `dependencies` and `devDependencies` 
-* We saw how to use scripts in node.js
-* We saw how to install the typescript compiler into the package
-* We saw how to create the `tsconfig.json` file and configure different aspects of the typescript project
-  * What the target version of javascript is
-  * Where to locate the source files
-  * Where to place the compiled files
-  * Libreries to include
-  * Adding `map` files to support debugging
-  * Running in the compiler in `watch` mode for continous compilation
-* We saw how to configure the `VS Code Debugger` for work with our `node.js` project
 
 ## Typescript basics
 * We learned about the basic types of typescript
