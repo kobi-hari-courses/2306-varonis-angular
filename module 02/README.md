@@ -1,7 +1,6 @@
 ## NodeJS Continued
 
 * We talked about the diffrence between `dependencies` and `devDependencies` 
-* We saw how to use scripts in node.js
 * We saw how to install the typescript compiler into the package
 * We saw how to create the `tsconfig.json` file and configure different aspects of the typescript project
   * What the target version of javascript is
@@ -22,3 +21,4 @@
   * Typescript definition for **Type Safety** as "signature compatible"
   * Union Types
   * Cross Types
+  * Mapped types
