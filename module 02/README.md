@@ -1,4 +1,4 @@
-## NodeJS Continued
+## Module 02 - NodeJS Continued
 
 * We talked about the diffrence between `dependencies` and `devDependencies` 
 * We saw how to install the typescript compiler into the package
