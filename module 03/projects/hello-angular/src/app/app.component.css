@@ -1,0 +1,18 @@
+.toolbar {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    max-height: 24px;
+    margin: 8px;
+}
+
+.seperator {
+    height: 4px;
+    background-color: gray;
+}
+
+.seperator.busy{
+    background-color: blue;
+}

@@ -1,0 +1,15 @@
+<div class="toolbar">
+    <input #searchBox type="search" 
+        (input)="setKeyword(searchBox.value)"
+        [disabled]="isBusy"
+        >
+    <button (click)="search()"
+        [disabled]="isBusy"
+    >Go</button>
+    <img src="assets/spinner.gif" *ngIf="isBusy">
+</div>
+<div class="seperator" [class.busy]="isBusy"></div>
+
+<ul>
+    <li *ngFor="let res of results; let i=index">{{i+1}}. {{res}}</li>
+</ul>
