@@ -1,0 +1,27 @@
+:host {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.area {
+    border: 1px solid lightgray;
+    margin: 4px;
+    border-radius: 10px;
+    display: grid;
+    overflow: hidden;
+}
+
+.title-area, .text-area {
+    grid-column: 1 / -1;
+}
+
+.text-area {
+    padding: 10px;
+}
+
+textarea {
+    resize: none;
+    border: 0px transparent;
+    outline: 0px transparent;
+}
