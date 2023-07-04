@@ -6,8 +6,8 @@
 * [Module 04 - Component Authoring (and some css)](./module%2004/README.md)
 
 ## Exercises
-* [Exercise 01 - Typescript](./module%2002/exercise/README.md)
-* [Exercise 02 - Angular](./module%2003/exercise/README.md)
+* [Exercise 01 - Typescript](./module%2002/exercises/README.md)
+* [Exercise 02 - Angular](./module%2003/exercises/README.md)
 * [Exercise 03 - Angular Components](./module%2004/exercises/README.md)
 
 ## Links
