@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TitleComponent } from './components/title/title.component';
+import { StringSelectorComponent } from './components/string-selector/string-selector.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TitleComponent, StringSelectorComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

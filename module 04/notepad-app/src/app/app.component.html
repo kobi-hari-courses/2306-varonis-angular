@@ -1,26 +1,29 @@
 <div class="title-area area">
-    Our amazing Notepad app
+    <app-title caption="Hello World" [reka]="selectedColor"></app-title>
 </div>
 
 <div class="colors-area area">
-    <div class="item" 
-        [class.chosen]="item === selectedColor"
-        (click)="selectColor(item)"
-    *ngFor="let item of colors">{{item}}</div>
+    <app-string-selector
+        [options]="colors"
+        [selectedOption]="selectedColor"
+        (selection)="selectColor($event)"
+    ></app-string-selector>
 </div>
 
 <div class="sizes-area area">
-    <div class="item" 
-        [class.chosen]="item === selectedSize"
-        (click)="selectSize(item)"
-        *ngFor="let item of sizes">{{item}}</div>
+    <app-string-selector
+        [options]="sizes"
+        [selectedOption]="selectedSize"
+        (selection)="selectSize($event)"
+    ></app-string-selector>
 </div>
 
 <div class="fonts-area area">
-    <div class="item" 
-    [class.chosen]="item === selectedFont"
-    (click)="selectFont(item)"
-    *ngFor="let item of fonts">{{item}}</div>
+    <app-string-selector
+        [options]="fonts"
+        [selectedOption]="selectedFont"
+        (selection)="selectFont($event)"
+    ></app-string-selector>
 </div>
 
 <div class="text-area area">
