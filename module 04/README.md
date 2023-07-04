@@ -26,5 +26,4 @@
   * The `OnInit` interface (after the inputs have been initialized)
   * The `OnChanges` interface (after each time an input is updated)
   * The `OnDestroy` interface (right before the component is to be removed from the DOM and destroyed)
-  * The `AfterViewInit` interface (right after the template has been created)
 
