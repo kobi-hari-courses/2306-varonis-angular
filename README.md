@@ -8,6 +8,7 @@
 ## Exercises
 * [Exercise 01 - Typescript](./module%2002/exercise/README.md)
 * [Exercise 02 - Angular](./module%2003/exercise/README.md)
+* [Exercise 03 - Angular Components](./module%2004/exercises/README.md)
 
 ## Links
 * [Node JS](https://nodejs.org/)
