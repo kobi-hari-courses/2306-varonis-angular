@@ -3,17 +3,30 @@
 </div>
 
 <div class="colors-area area">
-    Colors
+    <div class="item" 
+        [class.chosen]="item === selectedColor"
+        (click)="selectColor(item)"
+    *ngFor="let item of colors">{{item}}</div>
 </div>
 
 <div class="sizes-area area">
-    Sizes
+    <div class="item" 
+        [class.chosen]="item === selectedSize"
+        (click)="selectSize(item)"
+        *ngFor="let item of sizes">{{item}}</div>
 </div>
 
 <div class="fonts-area area">
-    Fonts
+    <div class="item" 
+    [class.chosen]="item === selectedFont"
+    (click)="selectFont(item)"
+    *ngFor="let item of fonts">{{item}}</div>
 </div>
 
 <div class="text-area area">
-    <textarea></textarea>
+    <textarea
+        [style.color]="selectedColor"
+        [style.font-family]="selectedFont"
+        [style.font-size]="selectedSize"
+    ></textarea>
 </div>
