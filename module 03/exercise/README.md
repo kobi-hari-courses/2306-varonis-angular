@@ -49,8 +49,11 @@ In this exercise, you're going to create a simple number guessing game in a sing
 
 - The game state, the secret number, and the list of guesses should be properties of the component class.
 - The `Math.random` function can be used to generate the secret number.
+- The `Math.ceil` function can be used to round the number up to the next integer.
 - The `Array.push` method can be used to add a new guess to the list of guesses.
 - Remember to bind the click event of the guess button to the method that makes a guess and the click event of the new game button to the method that starts a new game.
 - Template reference variables can be used to access the value of the guess input.
 - The `[class.xxx]` binding can be used to conditionally apply a CSS class to an element.
+- The `Number()` function translates a string into number
+- 
 
