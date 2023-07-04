@@ -4,11 +4,12 @@ import { CardCell } from './models/card-cell.model';
 import { Player } from './models/player.model';
 import { generateSuffledCards } from './helpers/card-helpers';
 import { Card } from './models/card.model';
+import { PlayerComponent } from './components/player/player.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, PlayerComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -18,6 +19,10 @@ export class AppComponent {
   player2!: Player;
   currentPlayer = this.player1;
   isCompleted = false;
+
+  constructor() {
+    this.newGame();
+  }
 
   newGame() {
     this.cards = generateSuffledCards();

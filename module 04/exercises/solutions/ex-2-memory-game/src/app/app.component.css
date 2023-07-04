@@ -1,0 +1,8 @@
+:host {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+}
+
+.area {
+    display: grid;
+}
