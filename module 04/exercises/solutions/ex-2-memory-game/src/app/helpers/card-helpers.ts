@@ -15,7 +15,7 @@ export function generateId(): string {
     return `id${++idCounter}`
 }
 
-export function createSuffledCards(): Card[] {
+export function generateSuffledCards(): Card[] {
     const cards: Card[] = [];
 
     for (let index = 0; index < 21; index++) {
