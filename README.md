@@ -3,6 +3,7 @@
 * [Module 01 - Javascript, Node and Typescript](./module%2001/README.md)
 * [Module 02 - Typescript](./module%2002/README.md)
 * [Module 03 - Introduction to Angular](./module%2003/README.md)
+* [Module 04 - Component Authoring](./module%2004/README.md)
 
 ## Exercises
 * [Exercise 01 - Typescript](./module%2002/exercise/README.md)
