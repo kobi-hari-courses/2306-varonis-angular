@@ -15,6 +15,11 @@
 * [Typescript homepage](https://www.typescriptlang.org/)
 * [VSCode homepage](https://code.visualstudio.com/)
 * [Angular Home Page](https://angular.io/)
+* Learning CSS
+    - [W3Schools](https://www.w3schools.com/css/default.asp)
+    - [Selectors Diner](https://flukeout.github.io/)
+    - [Flex Froggy](https://flexboxfroggy.com/)
+    - [Grid Garden](https://cssgridgarden.com/)
 
 ## Recommended Extensions for Vs Code
 | | |
