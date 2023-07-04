@@ -1,0 +1,9 @@
+<div class="cells">
+    <div *ngFor="let cell of cells">
+        <app-card *ngIf="cell as card" [card]="card"></app-card>
+    </div>
+</div>
+
+<div class="freeze-panel" *ngIf="isFrozen">
+    <button>Continue</button>
+</div>

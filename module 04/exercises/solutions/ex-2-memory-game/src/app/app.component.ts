@@ -5,16 +5,17 @@ import { Player } from './models/player.model';
 import { generateSuffledCards } from './helpers/card-helpers';
 import { Card } from './models/card.model';
 import { PlayerComponent } from './components/player/player.component';
+import { BoardComponent } from "./components/board/board.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, PlayerComponent],
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css'],
+    imports: [CommonModule, PlayerComponent, BoardComponent]
 })
 export class AppComponent {
-  cards: CardCell[] = [];
+  cells: CardCell[] = [];
   player1!: Player;
   player2!: Player;
   currentPlayer = this.player1;
@@ -25,7 +26,7 @@ export class AppComponent {
   }
 
   newGame() {
-    this.cards = generateSuffledCards();
+    this.cells = generateSuffledCards();
     this.player1 = {
       name: 'Player 1', 
       collectedPairs: []
@@ -52,7 +53,7 @@ export class AppComponent {
 
   onMatch(cards: Card[]){
     const cardsIds = cards.map(c => c.id);
-    this.cards = this.cards
+    this.cells = this.cells
       .map(c => ((c === null) || (cardsIds.includes(c.id))) ? null : c);
 
     for (const card of cards) {
@@ -60,6 +61,6 @@ export class AppComponent {
     }
 
     this.togglePlayer();
-    this.isCompleted = this.cards.every(c => c === null);
+    this.isCompleted = this.cells.every(c => c === null);
   }
 }
