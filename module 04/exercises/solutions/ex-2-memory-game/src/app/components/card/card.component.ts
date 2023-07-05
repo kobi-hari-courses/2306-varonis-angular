@@ -20,10 +20,10 @@ export class CardComponent implements OnChanges {
   flip = new EventEmitter<void>();
 
   imagePath = '';
+  backPath = 'assets/images/bg.jpg';
 
   calcPath(): string {
     if (this.card === null) return '';
-    if (!this.flipped) return 'assets/images/bg.jpg';
     return `assets/images/cards/${this.card.image}.jpg`;
   }
 
