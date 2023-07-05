@@ -29,6 +29,10 @@ Implement a parent component that uses the `PostListComponent` and the `CreatePo
 
 The goal of this exercise is to create a simple memory game. The game will have two players who take turns to find matching pairs of cards. Each player will accumulate the pairs they've found. 
 
+## Solution
+You can find the code to this exercise here.
+Also, you can find a video demonstrating the solution [here](https://youtu.be/STvDVdZ1XOw)
+
 ## Requirements
 0. Before you start coding, download some images and store them in the `assets` folder. 
     - Add another image for the back side of the card.  This is the image that will be displayed when the card is flipped
