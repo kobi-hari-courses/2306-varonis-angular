@@ -34,15 +34,14 @@ export class BoardComponent {
 
   onUnfreeze() {
     // should be...
-    if (this.flipped.length === 2) {
-      const card1 = this.findCard(this.flipped[0])!;
-      const card2 = this.findCard(this.flipped[1])!;
+    if (this.flipped.length !== 2) return;
+    const card1 = this.findCard(this.flipped[0])!;
+    const card2 = this.findCard(this.flipped[1])!;
 
-      if (card1.image === card2.image) {
-        this.match.emit([card1, card2]);
-      } else {
-        this.miss.emit();
-      }
+    if (card1.image === card2.image) {
+      this.match.emit([card1, card2]);
+    } else {
+      this.miss.emit();
     }
 
     this.flipped = [];

@@ -1,5 +1,5 @@
 <h1>{{player.name}}</h1>
 <h2>Score: {{player.collectedPairs.length}}</h2>
 <div class="cards">
-    
+    <app-card *ngFor="let card of player.collectedPairs" [card]="card" [flipped]="true"></app-card>
 </div>

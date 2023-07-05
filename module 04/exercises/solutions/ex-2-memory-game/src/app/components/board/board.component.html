@@ -1,9 +1,11 @@
 <div class="cells">
-    <div *ngFor="let cell of cells">
-        <app-card *ngIf="cell as card" [card]="card"></app-card>
+    <div *ngFor="let cell of cells" class="cell">
+        <app-card *ngIf="cell as card" [card]="card"
+            [flipped]="flipped.includes(cell.id)"
+            (flip)="onFlip(card)"
+        ></app-card>
     </div>
 </div>
+<div *ngIf="isFrozen" (click)="onUnfreeze()" class="freeze">
 
-<div class="freeze-panel" *ngIf="isFrozen">
-    <button>Continue</button>
 </div>

@@ -18,11 +18,11 @@ export function generateId(): string {
 export function generateSuffledCards(): Card[] {
     const cards: Card[] = [];
 
-    for (let index = 0; index < 21; index++) {
+    for (let index = 1; index <= 21; index++) {
         for (let i = 0; i < 2; i++) {
             cards.push({
                 id: generateId(), 
-                image: i.toString()
+                image: index.toString()
             })
         }
     }
