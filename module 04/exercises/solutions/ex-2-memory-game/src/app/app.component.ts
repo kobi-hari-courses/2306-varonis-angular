@@ -61,5 +61,6 @@ export class AppComponent {
 
     this.currentPlayer.collectedPairs.push(cards[0]);
     this.isCompleted = this.cells.every((c) => c === null);
+    console.table(toMatrix(this.cells.map(i => i?.image), 7));
   }
 }
