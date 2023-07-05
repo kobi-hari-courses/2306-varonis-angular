@@ -1,5 +1,5 @@
 <div class="area player-1">
-    <app-player [player]="player1"></app-player>
+    <app-player [player]="player1" [isActive]="currentPlayer === player1"></app-player>
 </div>
 <div class="area board">
     <app-board [cells]="cells"
@@ -8,5 +8,5 @@
     ></app-board>
 </div>
 <div class="area player-2">
-    <app-player [player]="player2"></app-player>
+    <app-player [player]="player2" [isActive]="currentPlayer === player2"></app-player>
 </div>

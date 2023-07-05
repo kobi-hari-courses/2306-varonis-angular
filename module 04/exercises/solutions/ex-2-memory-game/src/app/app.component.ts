@@ -2,17 +2,17 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardCell } from './models/card-cell.model';
 import { Player } from './models/player.model';
-import { generateSuffledCards } from './helpers/card-helpers';
+import { generateSuffledCards, toMatrix } from './helpers/card-helpers';
 import { Card } from './models/card.model';
 import { PlayerComponent } from './components/player/player.component';
-import { BoardComponent } from "./components/board/board.component";
+import { BoardComponent } from './components/board/board.component';
 
 @Component({
-    selector: 'app-root',
-    standalone: true,
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css'],
-    imports: [CommonModule, PlayerComponent, BoardComponent]
+  selector: 'app-root',
+  standalone: true,
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+  imports: [CommonModule, PlayerComponent, BoardComponent],
 })
 export class AppComponent {
   cells: CardCell[] = [];
@@ -28,15 +28,17 @@ export class AppComponent {
   newGame() {
     this.cells = generateSuffledCards();
     this.player1 = {
-      name: 'Player 1', 
-      collectedPairs: []
-    }
+      name: 'Player 1',
+      collectedPairs: [],
+    };
     this.player2 = {
-      name: 'Player 2', 
-      collectedPairs: []
-    }
+      name: 'Player 2',
+      collectedPairs: [],
+    };
     this.currentPlayer = this.player1;
     this.isCompleted = false;
+
+    console.table(toMatrix(this.cells.map(i => i?.image), 7));
   }
 
   togglePlayer() {
@@ -51,16 +53,13 @@ export class AppComponent {
     this.togglePlayer();
   }
 
-  onMatch(cards: Card[]){
-    const cardsIds = cards.map(c => c.id);
-    this.cells = this.cells
-      .map(c => ((c === null) || (cardsIds.includes(c.id))) ? null : c);
+  onMatch(cards: Card[]) {
+    const cardsIds = cards.map((c) => c.id);
+    this.cells = this.cells.map((c) =>
+      c === null || cardsIds.includes(c.id) ? null : c
+    );
 
-    for (const card of cards) {
-      this.currentPlayer.collectedPairs.push(card);
-    }
-
-    this.togglePlayer();
-    this.isCompleted = this.cells.every(c => c === null);
+    this.currentPlayer.collectedPairs.push(cards[0]);
+    this.isCompleted = this.cells.every((c) => c === null);
   }
 }

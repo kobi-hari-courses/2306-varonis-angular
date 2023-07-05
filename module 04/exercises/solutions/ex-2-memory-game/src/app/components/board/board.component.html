@@ -1,8 +1,8 @@
 <div class="cells">
-    <div *ngFor="let cell of cells" class="cell">
-        <app-card *ngIf="cell as card" [card]="card"
-            [flipped]="flipped.includes(cell.id)"
-            (flip)="onFlip(card)"
+    <div *ngFor="let card of cells" class="cell">
+        <app-card [card]="card"
+            [flipped]="flipped.includes(card?.id??'')"
+            (flip)="onFlip(card!)"
         ></app-card>
     </div>
 </div>

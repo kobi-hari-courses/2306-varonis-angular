@@ -14,4 +14,7 @@ export class PlayerComponent {
   @Input({required: true})
   player!: Player;
 
+  @Input({required: true})
+  isActive = false;
+
 }

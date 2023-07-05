@@ -1,1 +1,1 @@
-<img [src]="imagePath" (click)="flip.emit()">
+<img *ngIf="card !== null" [src]="imagePath" (click)="flip.emit()">
