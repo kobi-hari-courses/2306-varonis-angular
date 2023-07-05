@@ -1,1 +1,3 @@
-<img *ngIf="card !== null" [src]="imagePath" (click)="flip.emit()">
+<div class="outer" (click)="flip.emit()">
+    <img *ngIf="card !== null" [src]="imagePath">
+</div>

@@ -1,6 +1,5 @@
 import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Card } from 'src/app/models/card.model';
 import { CardCell } from 'src/app/models/card-cell.model';
 
 @Component({
@@ -22,10 +21,6 @@ export class CardComponent implements OnChanges {
 
   imagePath = '';
 
-  invalidate() {
-    this.imagePath = this.calcPath();
-  }
-
   calcPath(): string {
     if (this.card === null) return '';
     if (!this.flipped) return 'assets/images/bg.jpg';
@@ -33,7 +28,7 @@ export class CardComponent implements OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    this.invalidate();
+    this.imagePath = this.calcPath();
   }
 
 }
