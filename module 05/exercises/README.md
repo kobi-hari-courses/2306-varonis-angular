@@ -46,7 +46,7 @@ Ensure that each component maintains its own state and operates independently of
 In this exercise we build on the previous example, and now we add a sophisticated "discount service" that affects the price calculation for each service
 
 ### Introduction
-In out meal building app, the price is calculated in a way that allows us to offer discount in happy hours. We want to encapsulate the logic of discount in 2 different services. One calculates the discount for happy hour and the other for "normal" hours
+In our meal building app, the price is calculated in a way that allows us to offer discount in happy hours. We want to encapsulate the logic of discount in 2 different services. One calculates the discount for happy hour and the other for "normal" hours
 
 ### Steps
 1. Create an Interface `DiscountService` that includes a method called `getDiscount`. The method will receive a meal and will return the discount offered for that meal
