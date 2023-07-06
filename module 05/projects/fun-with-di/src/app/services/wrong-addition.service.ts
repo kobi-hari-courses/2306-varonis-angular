@@ -5,15 +5,15 @@ import { IAdditionService } from "./iaddition-service";
 @Injectable({
     providedIn: 'root'
 })
-export class AdditionService implements IAdditionService {
+export class WrongAdditionService implements IAdditionService {
     id = Math.ceil(Math.random() * 100000);
 
     constructor(private historyService: HistoryService) {
-        console.log(`Addition Service created id = ${this.id}`);
+        console.log(`Wrong Addition Service created id = ${this.id}`);
     }
 
     add(a: number, b: number) {
         this.historyService.audit(`Adding ${a} and ${b}`)
-        return a + b;
+        return a + b + 1;
     }
 }
