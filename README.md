@@ -4,6 +4,7 @@
 * [Module 02 - Typescript](./module%2002/README.md)
 * [Module 03 - Introduction to Angular](./module%2003/README.md)
 * [Module 04 - Component Authoring (and some css)](./module%2004/README.md)
+* [Module 05 - Dependency Injection](./module%2005/README.md)
 
 ## Exercises
 * [Exercise 01 - Typescript](./module%2002/exercises/README.md)
