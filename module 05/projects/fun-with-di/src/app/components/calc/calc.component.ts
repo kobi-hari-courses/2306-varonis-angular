@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AdditionService } from 'src/app/services/addition.service';
+import { GroupComponent } from '../group/group.component';
 
 @Component({
   selector: 'app-calc',
@@ -13,7 +14,9 @@ import { AdditionService } from 'src/app/services/addition.service';
   ]
 })
 export class CalcComponent {
-  constructor(protected additionService: AdditionService){}
+  constructor(
+    protected additionService: AdditionService, 
+    protected groupParent: GroupComponent){}
 
   result: number = -1;
 

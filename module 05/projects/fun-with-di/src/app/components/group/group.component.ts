@@ -12,5 +12,6 @@ import { AdditionService } from 'src/app/services/addition.service';
     providers: [AdditionService]
 })
 export class GroupComponent {
+    groupId = Math.ceil(Math.random() * 1000);
 
 }
