@@ -1,5 +1,12 @@
 # Angular Dependency Injection exercises
 
+This topic has 2 exercises
+- Exercise 1 practices the basic skills of dependency injection along with components and services
+- Exercise 2 practices some special features such as
+    - Dependency Token
+    - Various types of providers
+
+
 ## Exercise 1 - Meal Builder Application
 
 In this exercise, you will create an Angular application that allows users to build multiple meals simultaneously. Each meal is constructed from a list of dishes, where each dish has a base price and multiple variations, each variation adding a different price to the base.
@@ -34,3 +41,34 @@ Ensure that each component maintains its own state and operates independently of
 * Create a "Meal Service" to handle each meal. 
 * Divide the application into many components, try not to write too much logic into each one.
 
+
+## Exercise 2 - Discounts
+In this exercise we build on the previous example, and now we add a sophisticated "discount service" that affects the price calculation for each service
+
+### Introduction
+In out meal building app, the price is calculated in a way that allows us to offer discount in happy hours. We want to encapsulate the logic of discount in 2 different services. One calculates the discount for happy hour and the other for "normal" hours
+
+### Steps
+1. Create an Interface `DiscountService` that includes a method called `getDiscount`. The method will receive a meal and will return the discount offered for that meal
+2. Implement 2 services the implement this interface. One is `HappyHourDiscountService` and one is `StandardDiscountService`. 
+    - The standard discount service will give 10% discount for every dollar over 100$ price
+    - The happy hour discount service will give 50% discount on the base prices for each dish (but not on the variation price)
+3. The "Meal Service" should request a discount service and include a discount for every meal.
+    - How will the Meal service ask for the discount service? Can it use the interface as token?
+4. The Meal component should display the discount and the final price. It should also display the type of discount planned for this meal
+5. Now create a special provider that will decide which type to inject
+     - If the time when the meal is created is between XX:50 and XX:00 (for every round hour) - use the happy hour discount. Otherwise use the stadndard one.
+     - Note that the discount is determined when the meal component is created
+     - Also note that there will be, at the same time, some meals with happy hour discount
+
+### Hints
+* You cannot use interfaces as tokens (why). What can you use instead?
+* You can get the current date as follows: 
+``` javascript 
+const d = new Date();
+```
+* Get the number of minutes in the current date and time as follows: 
+``` javascript
+const mins = d.getMinutes();
+```
+* How do you provide different service types for different conditions?
