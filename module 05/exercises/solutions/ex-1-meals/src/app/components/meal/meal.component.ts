@@ -17,18 +17,15 @@ export class MealComponent {
   @Input({required: true})
   meal!: Meal;
   
-  constructor(private mealService: MealService){}
+  constructor(protected mealService: MealService){}
 
   ngOnInit() {
     this.mealService.setMeal(this.meal);
-    this.price = this.mealService.getPrice();
   }
 
-  price: number = this.mealService.getPrice();
 
   addItem(dish: Dish, variation: Variation) {
     this.mealService.addItem(dish, variation);
-    this.price = this.mealService.getPrice();
   }
 
 

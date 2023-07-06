@@ -5,20 +5,23 @@ import { Dish } from '../models/dish.model';
 import { Variation } from '../models/variation.model';
 import { StateService } from './state.service';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class MealService {
   constructor(private stateService: StateService){
     stateService.onAdd.subscribe(val => {
-      
+      if (this.stateService.selectedMeal === this.meal) {
+        this.meal.items.push({
+          dish: val[0], 
+          variation: val[1]
+        });
+        this.price = this.calculatePrice();
+      }
     })
-
   }
 
   private meal!: Meal;
 
-  private price: number = 0;
+  public price: number = 0;
 
   setMeal(meal: Meal) {
     this.meal = meal;
@@ -26,10 +29,6 @@ export class MealService {
 
   getItems(): MealItem[] {
     return this.meal.items;
-  }
-
-  getPrice(): number {
-    return this.price;
   }
 
   addItem(dish: Dish, variation: Variation) {
