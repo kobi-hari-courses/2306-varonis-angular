@@ -1,0 +1,28 @@
+:host {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.menu-area {
+    display: grid;
+    border-bottom: 2px solid gray;
+}
+
+.meals-area {
+    display: flex;
+    flex-direction: row;
+}
+
+.meals-area button {
+    margin-left: auto;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+app-meal {
+    outline: transparent;
+}
+
+app-meal.selected {
+    outline: 2px solid brown;
+}

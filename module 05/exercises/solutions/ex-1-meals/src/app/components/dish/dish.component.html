@@ -1,0 +1,9 @@
+<h1>{{dish.caption}}</h1>
+<h2>price: {{dish.price}}</h2>
+<div class="variations">
+    <div class="variation" *ngFor="let v of dish.variations"
+        (click)="stateService.add(dish, v)"
+    >
+        {{v.caption}} ({{v.price}})
+    </div>
+</div>

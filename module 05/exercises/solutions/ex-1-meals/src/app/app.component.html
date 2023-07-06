@@ -1,0 +1,12 @@
+<div class="menu-area">
+    <app-menu/>
+</div>
+<div class="meals-area">
+    <app-meal *ngFor="let meal of stateService.meals; let i = index"
+        [meal]="meal"
+        (delete)="stateService.removeMeal(i)" 
+        [class.selected]="meal === stateService.selectedMeal"
+        (click)="stateService.setSelected(meal)"
+    />
+    <button (click)="stateService.addMeal()">+</button>
+</div>
