@@ -10,6 +10,7 @@
 * [Exercise 01 - Typescript](./module%2002/exercises/README.md)
 * [Exercise 02 - Angular](./module%2003/exercises/README.md)
 * [Exercise 03 - Angular Components](./module%2004/exercises/README.md)
+* [Exercise 04 - Dependency Injection](./module%2005/exercises/README.md)
 
 ## Links
 * [Node JS](https://nodejs.org/)
