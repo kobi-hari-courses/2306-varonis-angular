@@ -1,4 +1,10 @@
-### Introduction to Grid Layout
+# Module 04 - Angular Component Authoring
+### Projects:
+|     |     |
+| --- | --- |
+| [Notepad App](./projects/notepad-app/) | Intermidate Angular application using components, inputs, outputs and lifecycle hooks |
+
+### Before we start - Introduction to Grid Layout
 * We have seen the Grid layout, and how to use it to create modren responsive UI layout
 * We have seen how to declare grid lines using `grid-template-rows` and `grid-template-columns` on the container
 * We have seen how to place grid children on a specific row or columns using `grid-row` and `grid-column` properties
