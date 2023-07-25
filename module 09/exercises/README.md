@@ -32,3 +32,40 @@ In this exercise you will create an application that will allow the user to prac
 4. The components should use `async` pipe to present the data.
 5. The components should all be configured to `Change Detection Strategy: Push`
 
+## Exercise 2: RGB Color Guessing Game
+
+### Targets
+- Using Behavior Subjects
+- Using async pipe and fully reactive paradigm
+- Using Reactive Forms **Reactively** 
+
+### Step 1: Set up the ColorService
+
+Create a new service named `ColorService`. This service should contain three `BehaviorSubjects`:
+
+1. `_generatedColor$` which holds the currently generated color string.
+2. `_guessedColor$` which holds the currently guessed color string.
+3. `_guessCorrect$` which holds a boolean indicating if the current guess is correct or not.
+
+This service should also expose three observables:
+
+1. `generatedColor$` which exposes the current generated color.
+2. `guessedColor$` which exposes the current guessed color.
+3. `guessCorrect$` which exposes whether the current guess is correct.
+
+The service should also have two methods:
+
+1. `generateColor()` which generates a new random color and updates `_generatedColor`, resets `_guessedColor` to `'rgb(0, 0, 0)'` and sets `_guessCorrect` to `false`.
+2. `updateGuess(color: string)` which updates `_guessedColor` with a new guess and checks if the new guess matches the generated color, updating `_guessCorrect` accordingly.
+
+### Step 2: Set up the AppComponent
+
+Next, set up a `FormGroup` in the `AppComponent` with three `FormControl` instances, one for each RGB component. These should be range inputs that go from 0 to 255. The form should also have a submit button that generates a new color when clicked.
+
+The `AppComponent` should subscribe to the `valueChanges` observable of the `FormGroup`, and each time the form's value changes, it should update the guessed color in the `ColorService`.
+
+The template of `AppComponent` should display whether the current guess is correct, as well as the current generated and guessed colors.
+
+Good luck!
+
+

@@ -1,4 +1,4 @@
-## Module 07 - Reactive Services, 
+## Module 09 - Reactive Services, 
 ### Projects:
 |     |     |
 | --- | --- |
