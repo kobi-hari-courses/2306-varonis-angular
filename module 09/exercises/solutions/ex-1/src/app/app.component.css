@@ -1,0 +1,7 @@
+.answer-box {
+    color: red;
+}
+
+.answer-box.correct {
+    color: green;
+}
