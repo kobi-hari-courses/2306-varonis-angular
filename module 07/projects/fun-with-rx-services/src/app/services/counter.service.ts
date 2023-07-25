@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, Observable, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -7,6 +7,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 export class CounterService {
   private counter: number = 0;
   private counter$ = new BehaviorSubject(this.counter);
+  // private counter$ = new Subject<number>();
 
   constructor() { }
 
