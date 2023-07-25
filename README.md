@@ -5,6 +5,7 @@
 * [Module 03 - Introduction to Angular](./module%2003/README.md)
 * [Module 04 - Component Authoring (and some css)](./module%2004/README.md)
 * [Module 05 - Dependency Injection](./module%2005/README.md)
+* [Module 06 - Reactive Forms](./module%2006/README.md)
 * [Module 07 - Routing](./module%2007/projects/app-routing/)
 * [Module 08 - RxJS Basics](./module%2008/README.md)
 * [Module 09 - Reactive Services](./module%2009/README.md)
