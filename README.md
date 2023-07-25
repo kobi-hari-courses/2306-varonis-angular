@@ -5,12 +5,15 @@
 * [Module 03 - Introduction to Angular](./module%2003/README.md)
 * [Module 04 - Component Authoring (and some css)](./module%2004/README.md)
 * [Module 05 - Dependency Injection](./module%2005/README.md)
+* [Module 06 - RxJS Basics](./module%2006/README.md)
+* [Module 07 - Reactive Services](./module%2007/README.md)
 
 ## Exercises
 * [Exercise 01 - Typescript](./module%2002/exercises/README.md)
 * [Exercise 02 - Angular](./module%2003/exercises/README.md)
 * [Exercise 03 - Angular Components](./module%2004/exercises/README.md)
 * [Exercise 04 - Dependency Injection](./module%2005/exercises/README.md)
+* [Exercise 05 - Reactive Services](./module%2007/exercises/README.md)
 
 ## Links
 * [Node JS](https://nodejs.org/)
@@ -23,6 +26,8 @@
     - [Selectors Diner](https://flukeout.github.io/)
     - [Flex Froggy](https://flexboxfroggy.com/)
     - [Grid Garden](https://cssgridgarden.com/)
+* [Reactive X](https://reactivex.io/)
+* [RxJS](https://rxjs.dev/)
 
 ## Recommended Extensions for Vs Code
 | | |
