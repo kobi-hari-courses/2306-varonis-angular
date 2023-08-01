@@ -1,3 +1,14 @@
+.toolbar {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+
+input {
+    font-size: 40px;
+    width: 200px;
+}
+
 .results {
     display: flex;
     flex-direction: row;

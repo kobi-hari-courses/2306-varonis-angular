@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BehaviorSubject, Observable, map, mergeAll, switchAll } from 'rxjs';
+import { BehaviorSubject, Observable, distinctUntilChanged, map, merge, mergeAll, switchAll } from 'rxjs';
 import { ColorsService } from './services/colors.service';
 import { Color } from './models/color.model';
 
@@ -19,5 +19,12 @@ export class AppComponent {
     map(keyword => this.colorsService.search(keyword)), 
     switchAll()
   )
+
+  true$ = this.search$.pipe(map(_ => true));
+  false$ = this.results$.pipe(map(_ => false));
+  isBusy$ = merge(this.true$, this.false$).pipe(
+    distinctUntilChanged()
+  );
+
 
 }
