@@ -9,6 +9,8 @@
 * [Module 07 - Routing](./module%2007/projects/app-routing/)
 * [Module 08 - RxJS Basics](./module%2008/README.md)
 * [Module 09 - Reactive Services](./module%2009/README.md)
+* [Module 10 - RxJS Operators](./module%2010/README.md)
+* [Module 11 - Promises](./module%2011/README.md)
 
 ## Exercises
 * [Exercise 01 - Typescript](./module%2002/exercises/README.md)
@@ -16,6 +18,7 @@
 * [Exercise 03 - Angular Components](./module%2004/exercises/README.md)
 * [Exercise 04 - Dependency Injection](./module%2005/exercises/README.md)
 * [Exercise 05 - Reactive Services](./module%2009/exercises/README.md)
+* [Exercise 06 - RxJS Operators](./module%2010/exercises/README.md)
 
 ## Links
 * [Node JS](https://nodejs.org/)
