@@ -1,0 +1,11 @@
+<div class="toolbar">
+    <input type="search" #searchBox 
+    (input)="search$.next(searchBox.value)">
+</div>
+<div class="results">
+    <div *ngFor="let item of results$ | async"
+        [style.background]="item.hex"
+    >
+        {{item.name}}
+    </div>
+</div>
