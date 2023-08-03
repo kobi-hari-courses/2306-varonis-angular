@@ -20,4 +20,9 @@ export class AppComponent {
     const action = userQuizActions.answerCurrentQuestion({index});
     this.store.dispatch(action);
   }
+
+  reset() {
+    const action = userQuizActions.reset();
+    this.store.dispatch(action);
+  }
 }
