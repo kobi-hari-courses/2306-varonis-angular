@@ -1,6 +1,8 @@
 <div *ngIf="question$ | async as question">
     <h1>{{question.caption}}</h1>
-    <div *ngFor="let answer of question.answers">
+    <div *ngFor="let answer of question.answers; let i = index"
+        (click)="answerQuestion(i)"
+    >
         {{answer}}
     </div>
 </div>
