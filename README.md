@@ -11,6 +11,7 @@
 * [Module 09 - Reactive Services](./module%2009/README.md)
 * [Module 10 - RxJS Operators](./module%2010/README.md)
 * [Module 11 - Promises](./module%2011/README.md)
+* [Module 12 - NgRx](./module%2012/README.md)
 
 ## Exercises
 * [Exercise 01 - Typescript](./module%2002/exercises/README.md)
@@ -36,6 +37,7 @@
     - [RxJS](https://rxjs.dev/)
     - [Rx Marbles](https://rxmarbles.com/)
     - [Rx Visualizer](https://rxviz.com/)
+* [NgRx documentation](https://ngrx.io/)
 
 ## Recommended Extensions for Vs Code
 | | |
