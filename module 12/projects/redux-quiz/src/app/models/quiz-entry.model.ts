@@ -1,0 +1,1 @@
+export type QuizEntry = 'Empty' | 'Correct' | 'Wrong';

@@ -7,7 +7,9 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideStore(), 
     provideState(quizFeature),
-    provideStoreDevtools(),
+    provideStoreDevtools({
+      maxAge: 25
+    }),
 
   ]
 };

@@ -1,0 +1,5 @@
+<div *ngFor="let entry of entries$ | async"
+    [class.empty]="entry === 'Empty'"
+    [class.correct]="entry === 'Correct'"
+    [class.wrong]="entry === 'Wrong'"
+></div>
