@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Store } from '@ngrx/store';
 import { quizFeature } from './features/quiz/redux/quiz.feature';
-import { answerCurrentQuestion } from './redux/quiz.actions';
+import { userQuizActions } from './redux/quiz.actions';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +17,7 @@ export class AppComponent {
   question$ = this.store.select(quizFeature.selectCurrentQuestion);
 
   answerQuestion(index: number) {
-    const action = answerCurrentQuestion({answerIndex: index});
+    const action = userQuizActions.answerCurrentQuestion({index});
     this.store.dispatch(action);
   }
 }
