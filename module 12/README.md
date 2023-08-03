@@ -41,11 +41,13 @@ newArray2 = [newValue, ...oldArray];
 * We saw how to create helper functions to make our code more readable.
 
 ### Redux and NgRx
-* We saw how to define actions and how to group them under a namespace
+* We saw how to define actions and how to group them under an `actionGroup`
 * We saw how to define `on` parts in the reducer, that respond to specific actions and calculate the next state
 * We saw how to dispatch actions from the components
 * We saw how to define a hierarchy of selectors
     - We used `createFeatureSelector` to define the root selector
     - We used `createSelector` to create a selector from other more primitive selectors
 * We saw how to use a selector to create observables which we can consume in the components
+* We saw that when we create features using `createFeature` we automatically get the atomic selectors
+* We can create additional selectors using the `extraSelectors` property
 
