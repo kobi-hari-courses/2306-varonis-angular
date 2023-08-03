@@ -32,7 +32,10 @@
     - [Flex Froggy](https://flexboxfroggy.com/)
     - [Grid Garden](https://cssgridgarden.com/)
 * [Reactive X](https://reactivex.io/)
-* [RxJS](https://rxjs.dev/)
+    - [RxJS Fruits Game](https://www.rxjs-fruits.com/)
+    - [RxJS](https://rxjs.dev/)
+    - [Rx Marbles](https://rxmarbles.com/)
+    - [Rx Visualizer](https://rxviz.com/)
 
 ## Recommended Extensions for Vs Code
 | | |
