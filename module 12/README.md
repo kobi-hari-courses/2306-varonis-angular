@@ -51,3 +51,15 @@ newArray2 = [newValue, ...oldArray];
 * We saw that when we create features using `createFeature` we automatically get the atomic selectors
 * We can create additional selectors using the `extraSelectors` property
 
+### Effects
+* We talked about the fact that `actions` are acutally "events" that occur in the application
+* We re-stated that the "reactive" way of thinking about applications, is that they are streams of events, translated into higher level event. In Reactive programming everything is an event.
+* Since the store itself is synchronous, we wondered how would be tackle the cases of asynchronous operations.
+* We introduced effects
+  - `Effect` is basically a reactive pipeline, that transform a stream of actions into a stream of other actions.
+  - Effects may be asynchronous, and they are allowed to have side effects. That means that you can transform a stream of actions by causing some asynchronous side effect and then then outputing a stream of other actions
+* We demonstrated several scenarios to use effects
+  - We saw an example of effects that write to the local storage
+  - We saw an example of effects that read from the local storage and then yield actions that change the store
+  - We saw an example of actions that are handled both by effects, and by a reducer
+  - We saw an example of asynchronous effects
