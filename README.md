@@ -12,6 +12,9 @@
 * [Module 10 - RxJS Operators](./module%2010/README.md)
 * [Module 11 - Promises](./module%2011/README.md)
 * [Module 12 - NgRx](./module%2012/README.md)
+* [Module 13 - Advanced DI in angular 16](./module%2013/README.md)
+* [Module 14 - Advanced Routing in angular 16](./module%2014/README.md)
+* [Module 15 - Custom Directives](./module%2015/README.md)
 
 ## Exercises
 * [Exercise 01 - Typescript](./module%2002/exercises/README.md)
