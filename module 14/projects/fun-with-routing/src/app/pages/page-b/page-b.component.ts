@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
@@ -10,6 +10,9 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./page-b.component.css']
 })
 export class PageBComponent {
+  @Input() rochav: string = '';
+  @Input() rashum: boolean = false;
+
   constructor() {
     const x= 10;
     const y = 20;

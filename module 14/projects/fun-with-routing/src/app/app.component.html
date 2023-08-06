@@ -1,8 +1,18 @@
+<div *ngIf="isLoggedIn$ | async">
+    You are logged in!
+    <button (click)="authService.logout()">Logout</button>
+</div>
+<div *ngIf="!(isLoggedIn$ | async)">
+    You are logged out!
+    <button (click)="authService.login()">Login</button>
+</div>
 <nav>
     <a routerLink="page-a">Page A</a>
     <a routerLink="page-b/x">Page B / X</a>
     <a routerLink="page-b/y">Page B / y</a>
-    <a routerLink="page-c">Page C</a>
+    <a routerLink="page-c/1">Page C-1</a>
+    <a routerLink="page-c/2">Page C-2</a>
+    <a routerLink="page-c/3">Page C-3</a>
 </nav>
 
 <router-outlet>

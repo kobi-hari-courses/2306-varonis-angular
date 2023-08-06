@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MY_NUMBER } from 'src/app/tokens/my-number.token';
 
 @Component({
   selector: 'app-x',
@@ -9,5 +10,6 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./x.component.css']
 })
 export class XComponent {
+  myNumber = inject(MY_NUMBER);
 
 }
