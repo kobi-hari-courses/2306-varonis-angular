@@ -42,6 +42,10 @@
     - [Rx Visualizer](https://rxviz.com/)
 * [NgRx documentation](https://ngrx.io/)
 
+## Presentations
+* [NgRx 16 - from DevGeekWeek](./assets/presentations/NgRx%2016.pdf)
+* [Ng New - from DevGeekWeek](./assets/presentations/Ng%20New.pdf)
+
 ## Recommended Extensions for Vs Code
 | | |
 |--|--|
