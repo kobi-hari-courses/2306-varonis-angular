@@ -1,0 +1,14 @@
+<div class="header-area area">
+    {{header}}
+</div>
+
+<div class="content-area area" *ngIf="isOpen">
+    <ng-content></ng-content>
+</div>
+
+<div class="button-area area">
+    <button (click)="toggle()">
+        <span *ngIf="isOpen">-</span>        
+        <span *ngIf="!isOpen">+</span>
+    </button>
+</div>
