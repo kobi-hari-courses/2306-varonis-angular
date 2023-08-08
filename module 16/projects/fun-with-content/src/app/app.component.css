@@ -20,3 +20,17 @@ li {
     object-fit: contain;
     margin: 0px 4px;
 }
+
+button[expander-toggle] {
+    background-color: green;
+    color: lime;
+    border: 1px solid green;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[expander-toggle]:hover {
+    background-color: lime;
+    color: green;
+}

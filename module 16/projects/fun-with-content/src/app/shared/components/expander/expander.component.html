@@ -1,15 +1,16 @@
-<div class="header-area area">
-    <ng-content select="[expander-title]"></ng-content>
+<div class="header-area area" >
+  <ng-content select="[expander-title]"></ng-content>
 </div>
 
 <div class="content-area area" *ngIf="isOpen">
-    <ng-content></ng-content>
+  <ng-content></ng-content>
 </div>
 
 <div class="button-area area">
-    <!-- <button (click)="toggle()">
-        <span *ngIf="isOpen">-</span>        
-        <span *ngIf="!isOpen">+</span>
-    </button> -->
-    <ng-content (click)="toggle()" select="[expander-toggle]"></ng-content>
+  <button *ngIf="!childToggleDirective" (click)="toggle()">
+    <span *ngIf="isOpen">-</span>
+    <span *ngIf="!isOpen">+</span>
+  </button>
+
+  <ng-content (click)="toggle()" select="[expander-toggle]"></ng-content>
 </div>

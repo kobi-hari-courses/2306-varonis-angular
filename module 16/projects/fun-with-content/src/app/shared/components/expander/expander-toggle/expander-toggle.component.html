@@ -1,0 +1,8 @@
+<div *ngIf="isOpen">
+    <ng-content select="[expander-on]"></ng-content>
+</div>
+<div *ngIf="isClosed">
+    <ng-content select="[expander-off]"></ng-content>
+</div>
+
+<ng-content></ng-content>
