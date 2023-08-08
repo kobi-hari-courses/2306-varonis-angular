@@ -15,6 +15,8 @@
 * [Module 13 - Advanced DI in angular 16](./module%2013/README.md)
 * [Module 14 - Advanced Routing in angular 16](./module%2014/README.md)
 * [Module 15 - Custom Directives](./module%2015/README.md)
+* [Module 16 - Content Projection](./module%2016/README.md)
+* [Module 17 - Templates and Structural Directives](./module%2017/README.md)
 
 ## Exercises
 * [Exercise 01 - Typescript](./module%2002/exercises/README.md)
