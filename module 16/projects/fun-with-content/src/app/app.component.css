@@ -3,3 +3,20 @@ img {
     height: 100px;
     object-fit: conver;
 }
+
+li {
+    color: magenta;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.title img {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+    margin: 0px 4px;
+}

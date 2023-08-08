@@ -7,9 +7,6 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./expander.component.css']
 })
 export class ExpanderComponent {
-  @Input({required: true})
-  header: string = '';
-
   isOpen = true;
 
   toggle() {
