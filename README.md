@@ -26,6 +26,12 @@
 * [Exercise 05 - Reactive Services](./module%2009/exercises/README.md)
 * [Exercise 06 - RxJS Operators](./module%2010/exercises/README.md)
 
+### Project
+This project summarizes the entire course.
+* [Project Description](https://github.com/kobi2294/AngularSamples/tree/master/src/todo-app#readme)
+* [Solution Code](https://github.com/kobi2294/AngularSamples/tree/master/src/todo-app)
+* [Video Solution](https://youtu.be/6NWdsDs5raI)
+
 ## Links
 * [Node JS](https://nodejs.org/)
 * [npm repository](https://www.npmjs.com/)
