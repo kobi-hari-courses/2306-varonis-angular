@@ -34,3 +34,7 @@ button[expander-toggle]:hover {
     background-color: lime;
     color: green;
 }
+
+.fancy {
+    --expander-header: pink;
+}

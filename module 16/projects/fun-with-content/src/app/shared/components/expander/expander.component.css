@@ -16,7 +16,7 @@
 .header-area {
     grid-column: 2;
     grid-row: 1;
-    background-color: lightseagreen;
+    background-color: var(--expander-header, teal);
     display: flex;
     flex-direction: row;
     align-items: center;
