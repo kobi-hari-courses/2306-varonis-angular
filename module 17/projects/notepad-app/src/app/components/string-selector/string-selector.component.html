@@ -4,5 +4,10 @@
   *ngFor="let item of options"
   (click)="selectOption(item)"
 >
-  {{ item }}
+  <ng-container *ngIf="!itemTemplate">
+    {{ item }}
+  </ng-container>
+  <ng-container *ngIf="itemTemplate">
+    <ng-container *ngTemplateOutlet="itemTemplate.template; context: {$implicit: item}"></ng-container>
+  </ng-container>
 </div>

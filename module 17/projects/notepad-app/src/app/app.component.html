@@ -1,35 +1,41 @@
 <div class="title-area area">
-    <app-title caption="Hello World" [reka]="selectedColor"></app-title>
+  <app-title caption="Hello World" [reka]="selectedColor"></app-title>
 </div>
 
 <div class="colors-area area">
-    <app-string-selector
-        [options]="colors"
-        [selectedOption]="selectedColor"
-        (selection)="selectColor($event)"
-    ></app-string-selector>
+  <app-string-selector
+    [options]="colors"
+    [selectedOption]="selectedColor"
+    (selection)="selectColor($event)"
+  >
+    <span *item-template="let item" [style.color]="item">{{ item }}</span>
+  </app-string-selector>
 </div>
 
 <div class="sizes-area area">
-    <app-string-selector
-        [options]="sizes"
-        [selectedOption]="selectedSize"
-        (selection)="selectSize($event)"
-    ></app-string-selector>
+  <app-string-selector
+    [options]="sizes"
+    [selectedOption]="selectedSize"
+    (selection)="selectSize($event)"
+  >
+    <span *item-template="let item" [style.font-size]="item">{{item}}</span>
+  </app-string-selector>
 </div>
 
 <div class="fonts-area area">
-    <app-string-selector
-        [options]="fonts"
-        [selectedOption]="selectedFont"
-        (selection)="selectFont($event)"
-    ></app-string-selector>
+  <app-string-selector
+    [options]="fonts"
+    [selectedOption]="selectedFont"
+    (selection)="selectFont($event)"
+  >
+    <span *item-template="let item" [style.font-family]="item">{{ item }}</span>
+  </app-string-selector>
 </div>
 
 <div class="text-area area">
-    <textarea
-        [style.color]="selectedColor"
-        [style.font-family]="selectedFont"
-        [style.font-size]="selectedSize"
-    ></textarea>
+  <textarea
+    [style.color]="selectedColor"
+    [style.font-family]="selectedFont"
+    [style.font-size]="selectedSize"
+  ></textarea>
 </div>

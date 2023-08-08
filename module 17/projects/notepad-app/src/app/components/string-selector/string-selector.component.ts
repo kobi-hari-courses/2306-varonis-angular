@@ -1,5 +1,6 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, ContentChild, EventEmitter, Input, Output, TemplateRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ItemTemplateDirective } from './item-template.directive';
 
 @Component({
   selector: 'app-string-selector',
@@ -12,6 +13,9 @@ export class StringSelectorComponent {
   @Input() options: string[] = [];
 
   @Input() selectedOption: string = '';
+
+  @ContentChild(ItemTemplateDirective)
+  itemTemplate?: ItemTemplateDirective;
 
   @Output()
   selection = new EventEmitter<string>();
